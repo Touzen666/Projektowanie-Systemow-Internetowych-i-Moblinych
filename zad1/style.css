@@ -1,0 +1,57 @@
+form{
+    display: block;
+    float: right;
+    
+   }
+   #submit{
+    float: right;
+    margin-right: 24px;
+   }
+
+ul{
+    background-color: #FFFF33;
+    color:black;
+}
+li {
+    
+    text-align: center;
+    
+    padding: 7px 0px 7px 0px;
+  }
+
+  a {
+    display: block;
+    width: 250px;
+    background-color: #FFF985;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    margin-left:70px;
+
+  }
+body {
+    background-color: #333300;
+    color: #FFFFFF;
+   }
+   h1 {
+    color: #FFFF33;
+    margin-left: 800px;
+    font: italic 200% fantasy;
+   }
+   p {
+    background-color: #FFFF33;
+    color: #333300;
+    text-align: center;
+    border: 3px groove #FFFF33;
+   }
+  article img{
+    margin-left: 850px
+   }
+   footer img{
+    margin-left: 900px
+   }
+   p a{
+    margin-left: 800px
+   }
+

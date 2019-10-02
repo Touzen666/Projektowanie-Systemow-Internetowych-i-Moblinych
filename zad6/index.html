@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Wykonane przez Bartosza Ochędowskiego -->
+        <meta charset="UFT-8"/>
+        <title>Lab6</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>  
+        <div >
+                    <button class="button" id="button1">
+                        <span>1)GET</span></button>
+                    <button class="button" id="button2">
+                        <span>2)GET</span></button>
+                    <button class="button" id="button3">
+                        <span>3)GET</span></button><br><br>
+        </div>
+
+
+        <form  method="POST">
+
+            <p>PostID:</p> <input type="text" id="postid1" name="search" placeholder=" Search.."/><br><br>
+            <p>Name:</p>   <input type="text" id="name1" name="search" placeholder=" Search.."/><br><br>
+            <p>Email:</p>  <input type="text" id="email1" name="search" placeholder=" Search.."/><br><br>
+            <p>Body:</p>   <input type="text" id="body1" name="search" placeholder=" Search.."/><br><br>
+
+            <input type="submit"  onmouseover="Send()"/>
+
+        </form>
+
+        <div id="div1">
+
+        </div>
+        <script>
+
+            // pokazanie wartości dodawanych po najechaniu myszką na submit w konsoli
+            var Funkcja = function()
+            {
+                var nam = document.getElementById("name1").value;
+                var pid = document.getElementById("postid1").value;
+                var ema = document.getElementById("email1").value;
+                var bod = document.getElementById("body1").value;
+                
+                fetch('https://jsonplaceholder.typicode.com/posts/1/comments', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                    email: ema,
+                    body: bod,
+                    postId: pid,
+                    name: nam
+                    }),
+                    headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                    }
+                })
+                .then(response => response.json())
+                .then(json => console.log(json))
+            }
+
+            let bn1 = document.querySelector("#button1");
+            let bn2 = document.querySelector("#button2");
+            let bn3 = document.querySelector("#button3");
+            let tab;
+
+            var Funkcja1 = function()
+            {
+                var xhttp = new XMLHttpRequest();  
+                xhttp.onreadystatechange = function(e) 
+                { 
+                    if (this.readyState == 4 && this.status == 200) 
+                    {
+                        tab = JSON.parse(this.response);
+                        var out="<ul>";
+                        for(var i=0;i<tab.length;i++){
+                            out+= "<li>" + tab[i].userId + " " + tab[i].id + " " + tab[i].title + " " + tab[i].body + "</li>";
+                        }
+                        out+= "</ul>";
+                        document.querySelector("#div1").innerHTML = out;
+                    }
+                };
+                var url = "https://jsonplaceholder.typicode.com/posts";
+                xhttp.open("GET", url, true);
+                xhttp.send();
+            }
+
+            var Funkcja2 = function()
+            {
+                var xhttp = new XMLHttpRequest();  
+                xhttp.onreadystatechange = function(e) 
+                { 
+                    if (this.readyState == 4 && this.status == 200) 
+                    {
+                        tab = JSON.parse(this.response);
+                        var out="<ul>";
+                        for(var i=0;i<tab.length;i++){
+                            out+= "<li>" + tab[i].postId + " " + tab[i].id + " " + tab[i].name + " " + tab[i].email + " " + tab[i].body + "</li>";
+                        }
+                        out+= "</ul>";
+                        document.querySelector("#div1").innerHTML = out;
+                    }
+                };
+                var url = "https://jsonplaceholder.typicode.com/posts/1/comments";
+                xhttp.open("GET", url, true);
+                xhttp.send();
+            }
+
+            var Funkcja3 = function()
+            {
+                var xhttp = new XMLHttpRequest();  
+                xhttp.onreadystatechange = function(e) 
+                { 
+                    if (this.readyState == 4 && this.status == 200) 
+                    {
+                        tab = JSON.parse(this.response);
+                        var out="<ul>";
+                        for(var i=0;i<tab.length;i++){
+                            out+= "<li>" + tab[i].userId + " " + tab[i].id + " " + tab[i].title + " " + tab[i].body + "</li>";
+                        }
+                        out+= "</ul>";
+                        document.querySelector("#div1").innerHTML = out;
+                    }
+                };
+                var url = "https://jsonplaceholder.typicode.com/posts?userId=1";
+                xhttp.open("GET", url, true);
+                xhttp.send();
+            }
+
+            bn1.addEventListener('click', Funkcja1);
+            bn2.addEventListener('click', Funkcja2);
+            bn3.addEventListener('click', Funkcja3);
+            
+        </script>
+    </body>
+</html>

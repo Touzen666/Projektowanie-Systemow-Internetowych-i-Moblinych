@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html leng ="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>
+        The coolest cities. Guide
+    </title>
+
+<link rel="stylesheet" href="style.css" >
+
+</head>
+<body>
+    <main>
+        <section>
+<header>    
+<div>    
+
+        <img id ="logo" src="logo.svg" alt="LOGO"
+        height="42" width="42">
+       <img id = "header_photo" src="Header_photo.jpg" 
+       alt="Header_photo">
+    
+        <h1 id="napis_glowny">
+    The coolest cities. Guide</h1>
+    
+</div>  
+    
+<div>
+    <ul class="link">
+
+            <li><a href="url" id = "menu">Homepage</a>
+            </li>
+            <li><a href="url" id = "menu">Gallery</a>
+            </li>
+            <li><a href="url" id =
+            "menu">About</a>
+            </li>
+            <li><a href="url" id = "menu">Contact</a>
+            </li>
+        
+    </ul>
+</div>
+</header>
+    </section>
+        
+<section>
+    <header>
+            
+        <h2 id ="viewed">Most viewed</h2>
+        
+        <div id = "zd_miasta">
+            
+            <div id="miasto1">
+                <img id="new_york" src="Header_photo.jpg" alt="New_York">
+                <h3>New York</h3>
+                <p id ="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="miasto2">
+                <img id="chicago" 
+                src="chicago.jpeg" 
+                alt="Chicago">
+                <h4>Chicago</h4>
+                <p id ="two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id ="linia1"></div>
+            <div id="miasto3">
+                <img id="california" src="California.jpeg" alt="California">
+                <h5>California</h5>
+                <p id ="three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>        
+
+        </div>
+        
+    </header>
+    
+        </section>
+    </main>
+</body>
+
+</html>

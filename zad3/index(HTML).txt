@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html leng ="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Header</h1>
+            <div>
+            <ul>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+            </ul>
+        </div>
+
+        </header>
+        <section>
+            <div class = "article">
+                <article>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat vero reiciendis hic deserunt repellat error, dolores laboriosam quos doloribus similique voluptate tenetur magni autem amet accusamus rerum corporis esse recusandae?</p>
+                </article>
+                <article >
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat vero reiciendis hic deserunt repellat error, dolores laboriosam quos doloribus similique voluptate tenetur magni autem amet accusamus rerum corporis esse recusandae?</p>
+                </article>
+                <article>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat vero reiciendis hic deserunt repellat error, dolores laboriosam quos doloribus similique voluptate tenetur magni autem amet accusamus rerum corporis esse recusandae?</p>
+                </article>
+            </div>
+        </section>
+        <section>
+            <div  class="button">
+            
+<input id ="first_input" type="text">
+<input id ="second_input" type="text">
+
+                <button>
+                    <p>Button</p>
+                </button>
+        </div>
+        </section>
+        <script>
+        
+        </script>
+    </body>
+
+</html>

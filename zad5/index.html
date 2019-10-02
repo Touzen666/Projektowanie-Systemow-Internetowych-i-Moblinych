@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <!-- Wykonane przez Bartosza Ochędowskiego -->
+    <meta charset="utf-8">
+    <title>Dodawanie laptopa do listy</title>
+</head>
+
+<body>
+    <div>
+        <p>Proszę wprowadzić informacje o urządzeniu</p>
+
+        <p>Nazwa: </p><input type="text" id="nazwa"><br />
+        <p>Pamieć operacyjna: </p><input type="number" id="pamiec"><br />
+
+        <button onclick="updateList()">Dodaj</button>
+
+    </div>
+
+    <h1>Informacje dotyczące laptopów:</h1>
+    <hr /><hr />
+
+    <p id="output"></p>
+
+
+    <script>
+        var laptops = [];
+
+        function updateList() {
+            // Inicjalizacja pol (inputow)
+            const nazwaInput = document.getElementById("nazwa");
+            const pamiecInput = document.getElementById("pamiec");
+            // Inicjalizacja wartosci wczesniej pobranych inputow
+            var nazwaValue = nazwaInput.value;
+            var pamiecValue = pamiecInput.value;
+
+            // Sprawdzanie wartosci
+            if (nazwaValue.length > 2 &&
+                nazwaValue !== "" &&
+                nazwaValue !== null &&
+                pamiecValue !== null &&
+                pamiecValue !== ""
+            ) {
+                // Warunek spelniony
+
+                // Inicjalizacja pustego obiektu
+                var laptop = {};
+                // Przypisanie ich wartosci
+                laptop.nazwa = nazwaValue;
+                laptop.pamiec = pamiecValue;
+                // Dodanie stworzonego obiektu do tablicy laptops[]
+                laptops.push(laptop);
+                // Wyczysc pola dla wygody uzytkownika
+
+                nazwaInput.innerHTML = "";
+                pamiecInput.innerHTML = "";
+            } else {
+                // Nie spelniono kryteriow wymagan,
+                // wyczysc formularz i wyswietl komunikat
+                nazwaValue = "";
+                pamiecValue = "";
+                alert("Popraw formularz!");
+                return;
+            }
+            document.getElementById("output").innerHTML = "";
+
+            for (let i = 0; i < laptops.length; i++) {
+                document.getElementById("output").innerHTML +=
+                    `Nazwa: ${laptops[i].nazwa} \n Pamiec: ${laptops[i].pamiec}<br/>`
+            }
+        }
+    </script>
+
+</body>
+
+</html>

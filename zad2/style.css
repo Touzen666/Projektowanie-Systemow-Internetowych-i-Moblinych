@@ -1,0 +1,422 @@
+
+#logo{
+  position: absolute;
+  width: 99px;
+  height: 41px;
+  left: 60px;
+  top: 20px;
+  
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 69px;
+  
+  color: #FFAF20;
+    }
+  #header_photo{    
+  display: flex;
+  border-top: 70px solid #FFFFFF;
+  width: 1905px;
+  /* taka mam rozdzielczosc monitora wiem zestrona nie jest responsywnatylko napisana pod rozdzielczosc mojego ekranu */
+  height: 990px;
+    }
+  #napis_glowny{
+  position: absolute;
+  width: 548px;
+  height: 182px;
+  left: 1042px;
+  top: 548px;
+      
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 91px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: underline orange;
+  }
+  ul {
+    position: absolute;
+    top: 32px;
+    right: 20%;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+      
+    display: inline-block;
+    color: #11455B;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 34px;
+  
+      
+  }
+  #viewed{
+  position: absolute;
+  width: 296px;
+  height: 69px;
+  left: 316px;
+  top: 1145px;
+      
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 68px;
+  
+  color: #000000;
+  }
+  #new_york{
+      
+  position: absolute;
+  width: 413px;
+  height: 250px;
+  left: 320px;
+  top: 1268px;
+  }
+  h3{
+  position: absolute;
+  width: 114px;
+  height: 36px;
+  left: 320px;
+  top: 1548px;
+  }
+  #one{
+  position: absolute;
+  width: 413px;
+  height: 128px;
+  left: 320px;
+  top: 1596px;
+  padding-bottom: 44px;
+  border-bottom:1px solid #11455B ;
+  }
+  #read_more_one{
+    position: absolute;
+    top: 1800px;
+    left: 321px;
+    color: #FFAF20;
+    text-decoration: none;
+  }
+  #galery_one{
+    position: absolute;
+    top: 1800px;
+    left: 680px;
+    color: #FFAF20;
+    text-decoration: none;
+  }
+  #chicago{
+  position: absolute;
+  width: 413px;
+  height: 250px;
+  left: 754px;
+  top: 1268px;
+  }
+  h4{
+  position: absolute;
+  width: 114px;
+  height: 36px;
+  left: 754px;
+  top: 1548px;
+  }
+  #two{
+  position: absolute;
+  width: 413px;
+  height: 172px;
+  left: 753px;
+  top: 1596px;
+  border-bottom:1px solid #11455B ;
+  }
+  #read_more_two{
+    position: absolute;
+    top: 1800px;
+    left: 753px;
+    color: #FFAF20;
+    text-decoration: none;
+  }
+  #galery_two {
+    position: absolute;
+    top: 1800px;
+    left: 1110px;
+    color: #FFAF20;
+    text-decoration: none;
+  }
+  #california{
+  position: absolute;
+  width: 413px;
+  height: 250px;
+  left: 1187px;
+  top: 1268px;
+  }
+  h5{
+  position: absolute;
+  width: 143px;
+  height: 36px;
+  left: 1187px;
+  top: 1548px;
+  }
+  #three{
+  position: absolute;
+  width: 413px;
+  height: 128px;
+  left: 1187px;
+  top: 1596px;
+  padding-bottom: 44px;
+  border-bottom:1px solid #11455B ;
+  }
+  #read_more_three{
+    position: absolute;
+    top: 1800px;
+    left: 1188px;
+    color: #FFAF20;
+    text-decoration: none;
+  }
+  #galery_three {
+    position: absolute;
+    top: 1800px;
+    left: 1545px;
+   color: #FFAF20;
+       text-decoration: none;
+
+  }
+
+  form{
+    position: absolute;
+    width: 1920px;
+    height: 1059px;
+    left: 0px;
+    top: 1982px;
+
+    background: #F8F3ED;
+  }
+  h6{
+    margin-left: 330px;
+    height: 69px;
+    top: 2057px;
+
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 68px;
+
+    color: #11455B;
+  }
+  form p{
+    position: absolute;
+    top: 295px;
+    left:530px;
+  
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #11455B;
+  }
+
+#input2 {
+    position: absolute;
+    top: 295px;
+    left:1060px;
+    
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #11455B;
+  }
+
+  #input3{
+    position: absolute;
+    top: 525px;
+    left:530px;
+    
+    box-sizing: border-box;
+    
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #11455B;
+  }
+
+  #name{
+    position: absolute;
+    width: 414px;
+    height: 96px;
+    
+    top: 345px;
+    left:530px;
+
+    border: 1px solid #11455B;
+    box-sizing: border-box;
+
+    background: #F8F3ED;
+  }
+  #email{
+    position: absolute;
+    width: 414px;
+    height: 96px;
+    
+    top: 345px;
+    left:1060px;
+
+    border: 1px solid #11455B;
+    box-sizing: border-box;
+    
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    background: #F8F3ED;
+  }
+  
+  textarea{
+    position: absolute;
+    top: 575px;
+    left:530px;
+    
+    width: 945px;
+    height: 220px;
+
+    border: 1px solid #11455B;
+    box-sizing: border-box;
+
+    background: #F8F3ED;
+  }
+
+  #input4{
+    position: absolute;
+
+    width: 16px;
+    height: 16px;
+
+    top: 845px;
+    left:530px;
+
+    border: 1px solid #11455B;
+    box-sizing: border-box;
+  }
+
+  label p{
+    
+    position: absolute;
+    width: 64px;
+    height: 31px;
+    top: 825px;
+    left:560px;
+
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px;
+
+    color: #11455B;
+  }
+
+  div input{
+    position: absolute;
+    width: 945px;
+    height: 72px;
+    top: 925px;
+    left:530px;
+
+    color: #FFFFFF;
+    background: #FFAF20;
+  }
+
+  #section{
+    position: absolute;
+
+    left: 60px;
+    top: 3200px;
+
+    width: 1500px;
+    height: 160px;
+  }
+  #logo2{
+    position: absolute;
+
+    width: 99px;
+    height: 41px;
+
+    left: 200px;
+    top:30px;
+    
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 69px;
+    
+    color: #FFAF20;
+  }
+  footer{
+    position: absolute;
+
+    width: 200px;
+    height: 31px;
+    left: 330px;
+
+    
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+  }
+
+  #section p{
+float: right;
+width: 154px;
+height: 31px;
+left: 1446px;
+top: 30px;
+
+font-family: Titillium Web;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 31px;
+
+
+
+color: #6E6E6E;
+  }
+  #section{
+
+    position: absolute;
+    margin-left:160px ;
+    border-top:1px solid #11455B ;
+    
+  }
+

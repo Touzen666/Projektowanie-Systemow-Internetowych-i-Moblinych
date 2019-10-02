@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML>
+<html>
+  <!-- Wykonane przez Bartosza Ochędowskiego -->
+  <head>
+    <title>Rozwiazanie zadania na ocene 3.0</title>
+  </head>
+  <body>
+
+<script>
+//Rozwiazanie zadania na ocene 3.0
+
+array1 = [1, '23', 23, 1245, false, '6543', 566666, 512.521, 50+'4', 'two'];
+
+object1 = {key1: '1', key2: '23', key3: 23, key4: 1245, key5: false, key6:'6', key: 't'};
+
+//1)
+for(var i=0; i < array1.length; i++)
+{
+
+if(typeof (array1[i]) === 'number') 
+    {
+        console.log(array1[i]);
+    }
+}
+
+//2)
+
+var suma = 0;
+
+for (i in object1)  
+{
+   
+    if(typeof (object1[i]) === 'number') 
+    {   
+        suma = suma + object1[i];     
+    }
+     console.log(suma);
+
+}
+</script>
+
+
+</body>
+</html>
